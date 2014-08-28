@@ -1,8 +1,8 @@
 Simple List Application
 =======================
 
-    git clone https://github.com/felixrabe/simple-list-application.git
-    cd simple-list-application/example
+    git clone https://github.com/felixrabe/fig-nodejs-mongodb-example.git
+    cd fig-nodejs-mongodb-example/example
     fig up
 
 
