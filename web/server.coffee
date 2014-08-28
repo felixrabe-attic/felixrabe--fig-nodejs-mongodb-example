@@ -1,7 +1,7 @@
 #!/usr/bin/env coffee
 
 require 'coffee-script/register'
-ListStorage = require('./liststorage-mongodb').ListStorage
+ListStorage = require('./liststorage').ListStorage
 listStorage = new ListStorage
 
 handlebars = require 'handlebars'
