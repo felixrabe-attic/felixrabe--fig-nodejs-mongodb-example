@@ -6,7 +6,7 @@ listStorage = new ListStorage
 
 handlebars = require 'handlebars'
 
-index = handlebars.compile '''
+indexTemplate = handlebars.compile '''
   <title>List</title>
   <h1>List</h1>
   <ul>
@@ -30,7 +30,7 @@ app.use bodyParser.urlencoded extended: true
 app.get '/', (req, res) ->
   listStorage.toArray (err, items) ->
     throw err if err
-    res.send index items: items
+    res.send indexTemplate items: items
 
 app.post '/', (req, res) ->
   listStorage.push req.body.item, (err) ->

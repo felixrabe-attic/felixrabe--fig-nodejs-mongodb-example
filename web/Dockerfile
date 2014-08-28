@@ -5,4 +5,4 @@ WORKDIR /code
 RUN npm install
 ADD . /code
 
-CMD ["node_modules/.bin/coffee", "server.coffee"]
+CMD ["./node_modules/.bin/coffee", "./server.coffee"]
